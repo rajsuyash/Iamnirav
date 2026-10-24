@@ -18,13 +18,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- Reusable "N" mark -->
+  <!-- Icons -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="n-mark" viewBox="0 0 26 30">
-      <path d="M0 2.2 5 0v30L1.4 28.4A2.4 2.4 0 0 1 0 26.2Z"/>
-      <path d="M7 0h4.2L19 30h-4.2Z"/>
-      <path d="M21 0l3.6 1.6A2.4 2.4 0 0 1 26 3.8V27.8L21 30Z"/>
-    </symbol>
     <symbol id="chev" viewBox="0 0 16 16"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="arrow-ne" viewBox="0 0 16 16"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   </svg>
@@ -32,14 +27,14 @@
   <header class="nav" id="top">
     <div class="container nav__inner">
       <a href="#top" class="brand" aria-label="I Am Nirav Mehta — home">
-        <svg class="brand__mark"><use href="#n-mark"/></svg>
-        <span class="brand__text">I AM NIRAV MEHTA</span>
+        <img class="brand__logo" src="assets/img/logos/logo-full.webp" alt="I Am Nirav Mehta" width="623" height="64">
       </a>
       <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
         <span></span><span></span>
       </button>
       <nav class="nav__menu" id="nav-menu">
         <a href="#about">About</a>
+        <a href="#companies">Companies</a>
         <a href="#podcast">Podcast</a>
         <a href="#contact">Contact</a>
         <a href="#contact" class="btn btn--light">Join the Community</a>
@@ -54,10 +49,10 @@
         <img src="assets/img/hero.webp" alt="Portrait of Nirav Mehta seated in a leather chair" fetchpriority="high">
       </picture>
       <div class="container hero__content">
-        <span class="pill pill--dark reveal"><svg class="pill__mark"><use href="#n-mark"/></svg>Entrepreneur. Brand Builder. Visionary.</span>
-        <h1 class="hero__title reveal">Building Businesses.<br>Creating Impact.<br>Inspiring the Future.</h1>
+        <span class="pill pill--dark reveal"><img class="pill__mark" src="assets/img/logos/logo-mark.webp" alt="" width="58" height="64">Entrepreneur. Brand Builder. Visionary.</span>
+        <h1 class="hero__title"><span class="line">Building Businesses.</span><span class="line">Creating Impact.</span><span class="line">Inspiring the Future.</span></h1>
         <p class="hero__lead reveal">I believe every great business starts with a vision. Over the years, I've built and collaborated with ventures across branding, technology, media, wellness, luxury, and innovation—transforming ideas into businesses that create lasting value and meaningful impact.</p>
-        <a href="#contact" class="btn btn--light reveal">Join the Quotient Community <svg class="ico"><use href="#chev"/></svg></a>
+        <a href="#contact" class="btn btn--light reveal">Join the Community <svg class="ico"><use href="#chev"/></svg></a>
       </div>
       <div class="container hero__foot">
         <a href="#podcast" class="btn btn--ghost">Watch Vaulted Views <svg class="ico"><use href="#chev"/></svg></a>
@@ -65,11 +60,23 @@
       </div>
     </section>
 
+    <!-- STATS (example numbers — owner to confirm) -->
+    <section class="stats" aria-label="At a glance">
+      <div class="container">
+        <dl class="stats__grid">
+          <div class="stat reveal"><dt>Years building</dt><dd data-count="20" data-suffix="+">20+</dd></div>
+          <div class="stat reveal"><dt>Companies</dt><dd data-count="6">6</dd></div>
+          <div class="stat reveal"><dt>Podcast episodes</dt><dd data-count="15" data-suffix="+">15+</dd></div>
+          <div class="stat reveal"><dt>Advisors in the community</dt><dd data-count="100" data-suffix="+">100+</dd></div>
+        </dl>
+      </div>
+    </section>
+
     <!-- ABOUT -->
     <section class="about light" id="about">
       <div class="container split">
         <div>
-          <span class="pill pill--light reveal"><svg class="pill__mark"><use href="#n-mark"/></svg>Who We Are</span>
+          <span class="pill pill--light reveal"><img class="pill__mark" src="assets/img/logos/logo-mark.webp" alt="" width="58" height="64">Who We Are</span>
           <h2 class="h2 reveal">Building Businesses with Purpose: Creating Impact Through Vision &amp; Innovation</h2>
         </div>
         <p class="body reveal">I believe that entrepreneurship is about more than building businesses—it's about creating opportunities, earning trust, and making a lasting impact. Throughout my journey, I've had the privilege of building and collaborating with ventures across branding, technology, media, wellness, and luxury. Every experience has strengthened my belief that innovation, meaningful relationships, and continuous learning are the foundation of sustainable success. My mission is to transform ideas into impactful ventures, inspire growth, and contribute to a future where businesses create value not just for industries, but for people and communities.</p>
@@ -81,59 +88,66 @@
       <section class="companies" id="companies">
         <div class="companies__bg" aria-hidden="true"></div>
         <div class="companies__head reveal">
-          <span class="pill pill--dark"><svg class="pill__mark"><use href="#n-mark"/></svg>Our Companies</span>
+          <span class="pill pill--dark"><img class="pill__mark" src="assets/img/logos/logo-mark.webp" alt="" width="58" height="64">Our Companies</span>
           <h2 class="h2">The Entrepreneurial Arc</h2>
-          <p>Over the past two decades, Nirav Mehta has built and led a network of companies that together form a vertically integrated wealth-management ecosystem:</p>
+          <p>Over the past two decades, Nirav Mehta has built and led a network of companies across branding, real estate, finance, luxury and lifestyle that work together as one ecosystem.</p>
         </div>
 
+        <!-- TODO: replace each href="#" with the company website and add target="_blank" rel="noopener" -->
         <div class="cards">
           <article class="card reveal">
-            <img class="card__logo card__logo--img" src="assets/img/passionfox-logo.webp" alt="Passionfox — the business studio" width="80" height="22">
-            <h3>PASSION FOX INOVATION PVT.LTD.</h3>
-            <p>From brand strategy to digital campaigns, Passionfox empowers businesses with innovative marketing solutions that drive visibility, engagement, and growth.</p>
-            <div class="card__foot"><a href="#" class="card__link">PassionFox <svg class="ico"><use href="#arrow-ne"/></svg></a><span class="steps" data-n="1"></span></div>
+            <div class="card__logo"><img src="assets/img/logos/logo-passionfox.webp" alt="PassionFox — the business studio" width="259" height="107" loading="lazy"></div>
+            <span class="tag">Marketing</span>
+            <h3>PassionFox Innovation Pvt. Ltd.</h3>
+            <p>From brand strategy to digital campaigns, PassionFox empowers businesses with innovative marketing solutions that drive visibility, engagement, and growth.</p>
+            <a href="#" class="card__link">PassionFox <svg class="ico"><use href="#arrow-ne"/></svg></a>
           </article>
           <article class="card reveal">
-            <div class="card__logo"><svg class="logo-n"><use href="#n-mark"/></svg><span class="logo-sep"></span><span class="logo-word">NM CONSULTANCY<small>Properties · Lifestyle · Business</small></span></div>
+            <div class="card__logo"><img src="assets/img/logos/logo-nm-consultancy.webp" alt="NM Consultancy" width="320" height="95" loading="lazy"></div>
+            <span class="tag">Real estate</span>
             <h3>NM Consultancy</h3>
             <p>Empowering clients with trusted real estate guidance and strategic investment solutions tailored to achieve long-term success.</p>
-            <div class="card__foot"><a href="#" class="card__link">NM Consultancy <svg class="ico"><use href="#arrow-ne"/></svg></a><span class="steps" data-n="2"></span></div>
+            <a href="#" class="card__link">NM Consultancy <svg class="ico"><use href="#arrow-ne"/></svg></a>
           </article>
           <article class="card reveal">
-            <div class="card__logo"><svg class="logo-n"><use href="#n-mark"/></svg><span class="logo-word">NM MONEY<small>Investment · Wealth · Insurance</small></span></div>
+            <div class="card__logo"><img src="assets/img/logos/logo-nm-money.webp" alt="NM Money" width="258" height="108" loading="lazy"></div>
+            <span class="tag">Finance</span>
             <h3>NM Money</h3>
             <p>Simplifying wealth creation through trusted financial planning, investment insights, and personalized strategies for long-term success.</p>
-            <div class="card__foot"><a href="#" class="card__link">NM Money <svg class="ico"><use href="#arrow-ne"/></svg></a><span class="steps" data-n="3"></span></div>
+            <a href="#" class="card__link">NM Money <svg class="ico"><use href="#arrow-ne"/></svg></a>
           </article>
           <article class="card reveal">
-            <div class="card__logo"><span class="logo-badge">NM</span><span class="logo-word logo-word--spaced">STYLE<small>Big Boys Luxury</small></span></div>
+            <div class="card__logo"><img src="assets/img/logos/logo-nm-style.webp" alt="NM Style — Big Boys Luxury" width="309" height="104" loading="lazy"></div>
+            <span class="tag">Luxury fashion</span>
             <h3>NM Styles</h3>
             <p>NM Styles is a luxury lifestyle and fashion brand that blends timeless elegance with contemporary design, delivering premium quality and sophisticated style.</p>
-            <div class="card__foot"><a href="#" class="card__link">NM Styles <svg class="ico"><use href="#arrow-ne"/></svg></a><span class="steps" data-n="4"></span></div>
+            <a href="#" class="card__link">NM Styles <svg class="ico"><use href="#arrow-ne"/></svg></a>
           </article>
           <article class="card reveal">
-            <div class="card__logo"><svg class="logo-house" viewBox="0 0 22 22" aria-hidden="true"><path d="M1 21V7l10-6v20M13 21V9l8 4v8Z" fill="none" stroke="currentColor" stroke-width="2"/></svg><span class="logo-word logo-word--stack"><b>ANHERIT</b>PROPERTIES</span></div>
+            <div class="card__logo"><img src="assets/img/logos/logo-anherit.webp" alt="Anherit Properties" width="364" height="82" loading="lazy"></div>
+            <span class="tag">Estate planning</span>
             <h3>Anherit Properties</h3>
             <p>Expert solutions for inheritance properties, estate planning, and wealth preservation—designed to secure your family's future.</p>
-            <div class="card__foot"><a href="#" class="card__link">Anherit Properties <svg class="ico"><use href="#arrow-ne"/></svg></a><span class="steps" data-n="5"></span></div>
+            <a href="#" class="card__link">Anherit Properties <svg class="ico"><use href="#arrow-ne"/></svg></a>
           </article>
           <article class="card reveal">
-            <div class="card__logo"><span class="logo-luke">LUKE<small>Diamonds</small></span></div>
+            <div class="card__logo"><img src="assets/img/logos/logo-luke.webp" alt="Luke Diamonds" width="161" height="80" loading="lazy"></div>
+            <span class="tag">Jewellery</span>
             <h3>Luke Diamonds</h3>
             <p>Luke Diamonds is a luxury jewellery brand crafting timeless diamond and fine jewellery with exceptional craftsmanship, elegance, and uncompromising quality.</p>
-            <div class="card__foot"><a href="#" class="card__link">Luke Diamonds <svg class="ico"><use href="#arrow-ne"/></svg></a><span class="steps" data-n="6"></span></div>
+            <a href="#" class="card__link">Luke Diamonds <svg class="ico"><use href="#arrow-ne"/></svg></a>
           </article>
         </div>
       </section>
 
       <div class="ecosystem reveal">
         <p>Together, these companies reflect Nirav's broader vision: creating an interconnected ecosystem that empowers advisors, delivers clarity to investors, and modernizes how financial planning is experienced.</p>
-        <div class="brand brand--lg"><svg class="brand__mark"><use href="#n-mark"/></svg><span class="brand__text">I AM NIRAV MEHTA</span></div>
+        <div class="brand brand--lg"><img class="brand__logo" src="assets/img/logos/logo-full.webp" alt="I Am Nirav Mehta" width="623" height="64"></div>
       </div>
 
       <section class="vault">
         <div class="vault__intro reveal">
-          <span class="pill pill--dark"><svg class="pill__mark"><use href="#n-mark"/></svg>Inside the Vault</span>
+          <span class="pill pill--dark"><img class="pill__mark" src="assets/img/logos/logo-mark.webp" alt="" width="58" height="64">Inside the Vault</span>
           <h2 class="h2">A Vaulted View of Perspective</h2>
           <p>At his core, Nirav believes perspective changes everything. The Low View focuses on what's right in front of us — the day-to-day noise of markets, media, and money. The Vaulted View looks higher: at strategy, systems, and the people who make financial freedom possible.</p>
         </div>
@@ -159,7 +173,7 @@
       <section class="podcast-hero">
         <div class="podcast-hero__bg" aria-hidden="true"></div>
         <div class="podcast-hero__content reveal">
-          <span class="goldman"><img src="assets/img/goldman-logo.webp" alt="" width="28" height="28"><span>THE GOLD MAN<br>DUBAI</span></span>
+          <img class="goldman" src="assets/img/logos/goldman-badge.webp" alt="The Gold Man Dubai" width="261" height="83">
           <h2 class="h2 h2--xl">The Podcast for Advisors<br>Who Think Like CEOs</h2>
           <p>Every week, Nirav takes you inside the vault—where real advisors, real strategies, and real transformation happen. The difference between an average practice and a thriving enterprise is perspective.</p>
           <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="btn btn--light">Watch the Latest Episode <svg class="ico"><use href="#chev"/></svg></a>
@@ -173,7 +187,7 @@
           <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="yt" aria-label="Watch on YouTube"><svg viewBox="0 0 24 24"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8Z"/><path fill="#fff" d="m9.6 15.6 6.2-3.6-6.2-3.6Z"/></svg></a>
         </div>
         <img class="show__host" src="assets/img/podcast-host.webp" alt="Nirav Mehta in a white blazer pointing at the camera" width="681" height="1052" loading="lazy">
-        <span class="goldman goldman--corner"><img src="assets/img/goldman-logo.webp" alt="" width="28" height="28"><span>THE GOLD MAN<br>DUBAI</span></span>
+        <img class="goldman goldman--corner" src="assets/img/logos/goldman-badge.webp" alt="" width="261" height="83">
       </section>
 
       <div class="marquee" aria-label="Strategic advisor mindset">
@@ -189,7 +203,7 @@
       <section class="episodes">
         <div class="episodes__track" tabindex="0" aria-label="Latest episodes">
           <article class="episode">
-            <img src="assets/img/ep-gold-prediction.webp" alt="Gold Prediction Next 8 Year episode thumbnail" width="960" height="540" loading="lazy">
+            <a class="episode__thumb" href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Watch episode"><img src="assets/img/ep-gold-prediction.webp" alt="Gold Prediction Next 8 Year episode thumbnail" width="960" height="540" loading="lazy"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5Z"/></svg></span></a>
             <div class="episode__body">
               <span class="date">April 3, 2026</span>
               <h3>Gold Price Prediction Next 8 Years 🚀 $20,000 Target?</h3>
@@ -197,7 +211,7 @@
             </div>
           </article>
           <article class="episode">
-            <img src="assets/img/ep-reality-show.webp" alt="Reality Show Exposed episode thumbnail" width="960" height="540" loading="lazy">
+            <a class="episode__thumb" href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Watch episode"><img src="assets/img/ep-reality-show.webp" alt="Reality Show Exposed episode thumbnail" width="960" height="540" loading="lazy"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5Z"/></svg></span></a>
             <div class="episode__body">
               <span class="date">Jun 8, 2026</span>
               <h3>Reality shaw exposed | big boss @eshanmashi</h3>
@@ -205,7 +219,7 @@
             </div>
           </article>
           <article class="episode">
-            <img src="assets/img/ep-kirti-choudhary.webp" alt="Kirti Choudhary I Broke The Rule episode thumbnail" width="960" height="540" loading="lazy">
+            <a class="episode__thumb" href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Watch episode"><img src="assets/img/ep-kirti-choudhary.webp" alt="Kirti Choudhary I Broke The Rule episode thumbnail" width="960" height="540" loading="lazy"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5Z"/></svg></span></a>
             <div class="episode__body">
               <span class="date">August 1, 2026</span>
               <h3>Kirti Choudhary Reveals Why She Broke the Ramp Rule</h3>
@@ -225,7 +239,7 @@
     <section class="contact light" id="contact">
       <div class="container split">
         <div>
-          <span class="pill pill--light reveal"><svg class="pill__mark"><use href="#n-mark"/></svg>Contact Nirav Mehta</span>
+          <span class="pill pill--light reveal"><img class="pill__mark" src="assets/img/logos/logo-mark.webp" alt="" width="58" height="64">Contact Nirav Mehta</span>
           <h2 class="h2 reveal">Let's Start the<br>Conversation</h2>
         </div>
         <div class="body reveal">
@@ -285,7 +299,7 @@
 
       <div class="footer__grid">
         <div>
-          <a href="#top" class="brand brand--lg"><svg class="brand__mark"><use href="#n-mark"/></svg><span class="brand__text">I AM NIRAV MEHTA</span></a>
+          <a href="#top" class="brand brand--lg"><img class="brand__logo" src="assets/img/logos/logo-full.webp" alt="I Am Nirav Mehta" width="623" height="64"></a>
           <p class="footer__meta">India<br><a href="tel:+919820217090">+91 98202 17090</a></p>
           <form class="newsletter" action="subscribe.php" method="post">
             <label for="nl-name">Join the QA Code Newsletter</label>
